@@ -22,8 +22,13 @@ class ProfileScreen extends StatelessWidget {
               //   height: 300.0,
               // ),
               CircleAvatar(
-                backgroundImage: AssetImage('images/krishn.jpg'),
-                radius: 130,
+                backgroundColor: Theme.of(context).accentColor,
+                radius: 134,
+                child: CircleAvatar(
+                  backgroundColor: Theme.of(context).primaryColor,
+                  backgroundImage: AssetImage('images/krishn.jpg'),
+                  radius: 130,
+                ),
               ),
               SizedBox(height: 40),
               Text(
